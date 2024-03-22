@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            font-weight: 700;
+            letter-spacing: 1.7px;
+            text-align: left;
+        }
+
+        input {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        Display the web page with “USER INFORMATION” as heading using the <h1> tag and include the following fields as the form fields:
+        »First Name
+        »Last Name
+        »Address
+        »Email ID
+        »date of birth -Use date field
+     -->
+    Q.One.A:-
+    <form style="text-align: center;">
+        <h1>USER INFORMATION:</h1>
+        <label for="name">First Name :</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="lname">Last Name :</label>
+        <input type="text" name="name" id="lname">
+        <br>
+        <label for="address">Address :</label>
+        <input type="text" name="name" id="address">
+        <br>
+        <label for="email">Email ID :</label>
+        <input type="email" name="name" id="email">
+        <br>
+        <label for="date">D O B :</label>
+        <input type="date" name="name" id="date">
+        <input type="submit">
+    </form> <br><br>
+    <!-- 
+        Write HTML script to play audio file with controls and play the audio file as soon as the web page is loaded (Note: Use autoplay option)
+     -->
+    Q.Two.A:- <br>
+    <audio controls autoplay>
+        <source src="/Assignments/Asg2/koyal-3526.mp3" type="Audio/mp3">
+    </audio>
+    <br><br>
+    Q.Three.A:- <br>
+    <!-- Write HTML script to play video file with controls and play the video file as soon as the web page is loaded (Use autoplay option). The video has to repeat playing once it stops (Use loop option) -->
+    <br>
+    <video controls autoplay width="100%" height="30%">
+        <source src="/Assignments/Asg2/Rainy-Day-WhatsApp-Status-Video.mp4" type="video/mp4">
+    </video>
+    <br><br>
+    Q.four.A:- <br>
+    Write HTML script to display two circles (Use either Canvasor SVG) <br>
+    <svg viewBox="0 0 700 700" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+        <ellipse rx="62.86187" ry="60.111663" transform="translate(116.087675 89.888338)" fill="#7a1b8a"
+            stroke-width="0" />
+    </svg>
+
+    <br><br>
+    Q.five.A:- Write HTML script to store your first name, last name and date of birth as part of web storage and
+    display the stored local storage content by retrieving it.</br><br>
+    <script>
+        // storing in local storage.//
+        localStorage.setItem('firstName', "Rana");
+        localStorage.setItem('lastName', "Raghav");
+        localStorage.setItem('dateOfBirth', "07/07/2000")
+        // Retriving fron local storage.//
+        localStorage.getItem('firstName');
+        localStorage.getItem('lastName');
+        localStorage.getItem('dateOfBirth');
+    </script>
+</body>
+
+</html>
